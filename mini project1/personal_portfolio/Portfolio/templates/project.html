@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+    <title>project</title>
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SUBITHA KP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Me</a>
+              </li>
+              </ul>
+              <form action="/search" method="get">
+                <input type="text" class="search-input" name="q" placeholder="Search...">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+    
+          </div>
+        </div>
+      </nav>
+    </div>
+    <title>SUBITHA KP- Portfolio</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #333131;
+      }
+  
+      header {
+        background-color: #b9b2b2;
+        color: #fff;
+        text-align: center;
+        padding: 2rem 0;
+      }
+  
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color:white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+  
+      h1, h2 {
+        color: #333;
+      }
+  
+      p {
+        line-height: 1.6;
+        color: #666;
+      }
+  
+      .skills {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .skills li {
+        background-color: #ddd;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 5px;
+      }
+  
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+        font-style: oblique;
+      }
+  
+      .project {
+        border: 1px solid #ddd;
+        padding: 1rem;
+        border-radius: 5px;
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      .project:hover {
+        transform: scale(1.05);
+      }
+  
+      .project h3 {
+        color: #333;
+      }
+  
+      .project p {
+        color: #666;
+      }
+  
+      footer {
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #a39d9d;
+        color: #fff;
+      }
+      .read-more a {
+  color: #3498db; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+    </style>
+  </head>
+  <body>
+  
+    <header>
+      <h1>SUBITHA KP</h1>
+      <p>Web Developer</p>
+    </header>
+  
+    <section>
+      <h1> My Projects</h1>
+      <div class="projects">
+        <!-- Project 1 -->
+        <div class="project">
+          <h3> To-Do List Console App</h3>
+          <p>Create a simple console-based to-do list application in Python. Users should be able to add tasks, mark tasks as completed, view the list of tasks, and delete tasks. Store the tasks in a text file to maintain the to-do list between different program runs. You can use basic file I/O operations for data persistence.</p>
+          <p class="read-more"><a href="https://www.javatpoint.com/simple-to-do-list-gui-application-in-python">Read More</a></p>
+        </div>
+          
+  
+        <!-- Project 2 -->
+        <div class="project">
+          <h3> Number Guessing Game</h3>
+          <p>Develop a simple number guessing game where the computer randomly selects a number, and the user tries to guess it. Provide hints to the user if their guess is too high or too low. Implement a scoring system based on the number of attempts. Allow the user to play multiple rounds and keep track of their best score. Add a feature to let the user set the range of numbers for increased difficulty.</p>
+          <p class="read-more"><a href="https://dev.to/balapriya/how-to-code-a-simple-number-guessing-game-in-python-4jai">Read More</a></p>
+        </div>
+        <div class="project">
+          <h3> Weather App in Python</h3>
+          <p>Create a command-line weather application in Python that retrieves real-time weather information based on user-provided location data. The app should interact with a weather API to fetch current weather conditions, temperature, humidity, and other relevant details for a given city or geographical coordinates</p>
+          <p class="read-more"><a href="https://medium.com/@rekalantar/how-to-build-a-simple-weather-app-in-python-with-openweathermap-api-447a2dd27898">Read More</a></p>
+        </div>
+        <div class="project">
+          <h3> Quiz App in Python</h3>
+          <p>Develop a console-based quiz application in Python that allows users to answer a series of questions from different categories. The app should present questions one at a time, record user responses, and provide a final score at the end. You can include multiple-choice questions, true/false questions, or a combination of both</p>
+          <p class="read-more"><a href="https://realpython.com/python-quiz-application/">Read More</a></p>
+        </div>
+        
+        
+    </section>
+  
+    <footer>
+      <p>&copy; 2023 SUBITHA. All rights reserved.</p>
+    </footer>
+  
+  </body>
+  </html>
+     
+<!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
